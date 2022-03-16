@@ -5,7 +5,7 @@ import "firebase/compat/storage";
 
 let firebaseConfig = {
   apiKey: "AIzaSyDmXk6QHY7wiraDufu5ofbAW-7ckOJbTT8",
-  authDomain: "disney-plus-clone-v1.firebaseapp.com",
+  authDomain: "disney-clone-72a3a.firebaseapp.com",
   projectId: "disney-plus-clone-v1",
   storageBucket: "disney-plus-clone-v1.appspot.com",
   messagingSenderId: "489326383214",
