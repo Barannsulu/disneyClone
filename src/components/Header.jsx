@@ -53,49 +53,37 @@ const Header = () => {
       <Link to="/home">
         <Logo src="/images/logo.svg" />
       </Link>
-      {!userName ? (
-        <LoginContainer>
-          <Login onClick={signIn}>login</Login>
-        </LoginContainer>
-      ) : (
-        <>
-          <NavMenu>
-            <Link to="/home">
-              <img src="/images/home-icon.svg" />
-              <span>HOME</span>
-            </Link>
+      <NavMenu>
+        <Link to="/home">
+          <img src="/images/home-icon.svg" />
+          <span>HOME</span>
+        </Link>
 
-            <a>
-              <img src="/images/search-icon.svg" />
-              <span>SEARCH</span>
-            </a>
+        <a>
+          <img src="/images/search-icon.svg" />
+          <span>SEARCH</span>
+        </a>
 
-            <a>
-              <img src="/images/watchlist-icon.svg" />
-              <span>WATCHLIST</span>
-            </a>
+        <a>
+          <img src="/images/watchlist-icon.svg" />
+          <span>WATCHLIST</span>
+        </a>
 
-            <a>
-              <img src="/images/original-icon.svg" />
-              <span>ORIGINALS</span>
-            </a>
+        <a>
+          <img src="/images/original-icon.svg" />
+          <span>ORIGINALS</span>
+        </a>
 
-            <a>
-              <img src="/images/movie-icon.svg" />
-              <span>MOVIES</span>
-            </a>
+        <a>
+          <img src="/images/movie-icon.svg" />
+          <span>MOVIES</span>
+        </a>
 
-            <a>
-              <img src="/images/series-icon.svg" />
-              <span>SERIES</span>
-            </a>
-          </NavMenu>
-          <UserImg
-            onClick={signOut}
-            src="https://pbs.twimg.com/profile_images/1406768364693987330/hpGf9Ove_400x400.jpg"
-          />
-        </>
-      )}
+        <a>
+          <img src="/images/series-icon.svg" />
+          <span>SERIES</span>
+        </a>
+      </NavMenu>
     </Nav>
   );
 };
