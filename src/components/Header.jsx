@@ -127,19 +127,6 @@ const NavMenu = styled.div`
       letter-spacing: 1.4px;
       font-size: 13px;
       margin-left: 5px;
-
-      &:after {
-        content: "";
-        height: 2px;
-        background-color: #fff;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -5px;
-        opacity: 0;
-        transform: scaleX(0);
-        transition: all 250ms cubic-bezier(.25 , .46, .45 , .94) 0s;
-      }
     }
 
     &:hover {
