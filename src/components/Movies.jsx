@@ -28,6 +28,7 @@ export default Movies;
 const Container = styled.div``;
 
 const Content = styled.div`
+  padding: 20px 20px;
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
