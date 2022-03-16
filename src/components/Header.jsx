@@ -84,6 +84,11 @@ const Header = () => {
           <span>SERIES</span>
         </a>
       </NavMenu>
+      <Created>Created by @barannsulu</Created>
+      <UserImg
+        onClick={signOut}
+        src="https://pbs.twimg.com/profile_images/1406768364693987330/hpGf9Ove_400x400.jpg"
+      />
     </Nav>
   );
 };
@@ -118,10 +123,10 @@ const NavMenu = styled.div`
     }
 
     span {
+      
       letter-spacing: 1.4px;
       font-size: 13px;
       margin-left: 5px;
-      position: relative;
 
       &:after {
         content: "";
@@ -149,30 +154,13 @@ const NavMenu = styled.div`
   } 
 `;
 
+const Created = styled.p`
+  margin-right: 10px;
+  font-size: 12px;
+`;
+
 const UserImg = styled.img`
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
-`;
-
-const LoginContainer = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-`;
-
-const Login = styled.div`
-  border: 1px solid #f9f9f9;
-  padding: 8px 16px;
-  border-radius: 5px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-
-  &:hover {
-    background-color: #f9f9f9;
-    color: #000;
-    border-color: transparent;
-  }
 `;
